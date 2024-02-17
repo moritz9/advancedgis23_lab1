@@ -1,13 +1,18 @@
-name: BIGGIS23
+name: biggis3
 channels:
+  - defaults
   - conda-forge
 dependencies:
   - python=3.9
   - affine
   - asyncssh
-  - boto3
+  - "dask[complete]"
+  - dask-geopandas
+  - dask-ml
   - descartes
+  - findspark
   - fiona
+  - folium
   - geojson
   - geopandas
   - geopy
@@ -15,26 +20,26 @@ dependencies:
   - ipyleaflet
   - jupyter
   - matplotlib
+  - mapclassify
   - numpy
-  - osmnx
   - pandas
   - pillow
   - pint
   - psycopg2
   - pyproj
-  - pytest
-  - pyrosm
-  - pygeos
   - rasterio
   - requests
   - rtree
   - s3fs
+  - scikit-learn
+  - scipy
   - shapely
   - yaml
   - pip
   - pip:
     - fastparquet
     - gdown
+    - numba
     - pyarrow
     - python-geohash
     - smopy
